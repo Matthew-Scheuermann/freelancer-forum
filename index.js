@@ -31,3 +31,16 @@ let freelancers = Array.from({ length: NUM_FREELANCERS }, () =>
 );
 
 // console.log(freelancers[0]);
+
+// number three - getAvgRate
+function getAvgRate() {
+  let totalRates = 0;
+  for (let i = 0; i < freelancers.length; i++) {
+    totalRates = totalRates + freelancers[i].rate;
+  }
+  return totalRates / freelancers.length;
+}
+console.log(getAvgRate());
+console.log(getAvgRate());
+console.log(getAvgRate());
+console.log(getAvgRate());
