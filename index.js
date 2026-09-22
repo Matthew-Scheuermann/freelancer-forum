@@ -24,3 +24,10 @@ function getFreelancer() {
   };
 }
 // console.log(getFreelancer());
+
+// number two - state variable to an array
+let freelancers = Array.from({ length: NUM_FREELANCERS }, () =>
+  getFreelancer(),
+);
+
+console.log(freelancers[0]);
