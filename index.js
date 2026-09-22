@@ -30,4 +30,4 @@ let freelancers = Array.from({ length: NUM_FREELANCERS }, () =>
   getFreelancer(),
 );
 
-console.log(freelancers[0]);
+// console.log(freelancers[0]);
