@@ -40,7 +40,13 @@ function getAvgRate() {
   }
   return totalRates / freelancers.length;
 }
-console.log(getAvgRate());
-console.log(getAvgRate());
-console.log(getAvgRate());
-console.log(getAvgRate());
+// console.log(getAvgRate());
+// console.log(getAvgRate());
+// console.log(getAvgRate());
+// console.log(getAvgRate());
+
+// number four -
+let storeAvg = getAvgRate();
+// console.log(storeAvg);
+
+// number five - single freelancer
