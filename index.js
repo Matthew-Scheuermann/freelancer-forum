@@ -79,3 +79,9 @@ function allFreelancers() {
   });
   return tableBody;
 }
+
+function avgOfAll() {
+  const displayAvg = document.createElement("p");
+  displayAvg.innerText = "The average rate is" + " " + storeAvg + ".";
+  return displayAvg;
+}
