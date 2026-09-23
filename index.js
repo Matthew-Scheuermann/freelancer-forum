@@ -80,8 +80,35 @@ function allFreelancers() {
   return tableBody;
 }
 
+// number 7 - diplay avg
 function avgOfAll() {
   const displayAvg = document.createElement("p");
   displayAvg.innerText = "The average rate is" + " " + storeAvg + ".";
   return displayAvg;
 }
+
+// number 8 - render
+function displayData() {
+  const dataDisplay = document.querySelector("#app");
+  dataDisplay.innerHTML = `
+
+  <h1>Freelancer Forum</h1>
+
+  <p id="avgPlaceholder"></p>
+
+  <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Occupation</th>
+          <th>Rate</th>
+        </tr>
+      </thead>
+      <tbody id="tbodyPlaceholder"></tbody>
+    </table>`;
+
+  dataDisplay.querySelector("#avgPlaceholder").replaceWith(avgOfAll());
+  dataDisplay.querySelector("#tbodyPlaceholder").replaceWith(allFreelancers());
+}
+
+displayData();
