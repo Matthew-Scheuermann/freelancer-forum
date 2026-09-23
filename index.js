@@ -50,3 +50,32 @@ let storeAvg = getAvgRate();
 // console.log(storeAvg);
 
 // number five - single freelancer
+function freelancer(freelancerProfile) {
+  const tableRow = document.createElement("tr");
+
+  //name
+  const tableName = document.createElement("td");
+  tableName.innerText = freelancerProfile.name;
+  tableRow.append(tableName);
+
+  const tableOccupation = document.createElement("td");
+  tableOccupation.innerText = freelancerProfile.occupation;
+  tableRow.append(tableOccupation);
+
+  const tableRate = document.createElement("td");
+  tableRate.innerText = freelancerProfile.rate;
+  tableRow.append(tableRate);
+
+  return tableRow;
+}
+
+//number six - all freelancers
+function allFreelancers() {
+  const tableBody = document.createElement("tbody");
+
+  freelancers.forEach((person) => {
+    const row = freelancer(person);
+    tableBody.append(row);
+  });
+  return tableBody;
+}
